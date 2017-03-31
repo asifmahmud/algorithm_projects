@@ -24,20 +24,16 @@ public:
 				sum->val = value;
 				carry = 0;
 				if (l1 != NULL){
-				    if (l1->next != NULL)
-				        sum->next = new ListNode(0);
+				    if (l1->next != NULL) sum->next = new ListNode(0);
 				}
 				if (l2 != NULL){
-				    if (l2 ->next != NULL)
-				        sum->next = new ListNode(0);
+				    if (l2->next != NULL) sum->next = new ListNode(0);
 				}
-				
 			}
 			sum = sum->next;
 			l1 = (l1 == NULL? NULL : l1->next);
 			l2 = (l2 == NULL? NULL : l2->next);
 		}
-		
 		return ret;
     }
 };
